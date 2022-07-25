@@ -24,3 +24,6 @@ Number(numero_falso);                // 2° opción, con decimales
 console.log(verdadero_o_falso);
 
 console.log(String(numero_entero)+5); // convierte a string, por lo que concatena
+
+// Como saber que tipo de dato es una variable
+console.log(typeof numero_entero);
