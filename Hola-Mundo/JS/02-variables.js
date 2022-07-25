@@ -1,3 +1,5 @@
+'use strict' // MODO ESTRICTO: programación más correcta
+// Es necesario usar var en modo estricto
 // VARIABLES
 // Una varibale es un contenedor de información
 
