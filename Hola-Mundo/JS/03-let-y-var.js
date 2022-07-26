@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 // Pruebas con let y var
 // let: Es una variable que se puede reasignar, no mantiene el valor anterior
 
@@ -6,9 +6,9 @@
 var numero = 40;
 console.log(numero); // 40
 
-if(true){
-    var numero = 50;
-    console.log(numero); // 50
+if (true) {
+  var numero = 50;
+  console.log(numero); // 50
 }
 
 console.log(numero); // 50
@@ -17,9 +17,9 @@ console.log(numero); // 50
 var texto = "Curso de JS";
 console.log(texto); // Curso de JS
 
-if(true){
-    let texto = "Curso de Angular";
-    console.log(texto); // Curso de Angular
+if (true) {
+  let texto = "Curso de Angular";
+  console.log(texto); // Curso de Angular
 }
 
 console.log(texto); // Curso de JS

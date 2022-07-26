@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 // Operadores
 // sin comillas lo reconoce como entero
@@ -19,11 +19,11 @@ var numero_falso = "44"; // string, no número entero
 console.log(numero_falso);
 
 // Convertir string a int
-console.log(parseInt(numero_falso));  // 1° opción, solo entero
-Number(numero_falso);                // 2° opción, con decimales
+console.log(parseInt(numero_falso)); // 1° opción, solo entero
+Number(numero_falso); // 2° opción, con decimales
 console.log(verdadero_o_falso);
 
-console.log(String(numero_entero)+5); // convierte a string, por lo que concatena
+console.log(String(numero_entero) + 5); // convierte a string, por lo que concatena
 
 // Como saber que tipo de dato es una variable
 console.log(typeof numero_entero);

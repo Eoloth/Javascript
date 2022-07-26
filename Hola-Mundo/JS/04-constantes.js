@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 // CONSTANTES
 // Como una variable, pero su valor no puede cambiar
 
