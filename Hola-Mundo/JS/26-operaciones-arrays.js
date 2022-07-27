@@ -27,5 +27,5 @@ if (indice > -1) {
   peliculas.splice(indice, 1); // elimina el elemento de la posicion indice
 }
 // peliculas.pop(); // Elimina el ultimo elemento del array
-var peliculas_string = peliculas.join();
+var peliculas_string = peliculas.join(); // Convierte el array en un string
 console.log(peliculas_string);
