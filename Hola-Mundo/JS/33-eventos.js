@@ -18,6 +18,18 @@ function cambiarColor() {
 }
 
 var boton = document.querySelector("#boton");
+
+// Click
 boton.addEventListener("click", function () {
   cambiarColor();
+});
+
+// Mouse over
+boton.addEventListener("mouseover", function () {
+  boton.style.background = "#ccc";
+});
+
+// Mouseout
+boton.addEventListener("mouseout", function () {
+  boton.style.background = "#999";
 });
