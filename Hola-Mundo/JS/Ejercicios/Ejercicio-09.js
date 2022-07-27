@@ -38,6 +38,7 @@ console.log(numeros);
 numeros.reverse(); // invierte el orden del array
 console.log(numeros);
 numeros.reverse(); // vuelve el array a la normalidad
+
 // mostrar cuantos elementos tiene el array
 document.write("<h1>El array tiene " + numeros.length + " elementos</h1>");
 
@@ -46,7 +47,8 @@ var busqueda = parseInt(
   prompt("Introduce un número para buscarlo en el array: ")
 );
 var posicion = numeros.indexOf(busqueda) + 1;
-if (posicion === -1) {
+if (posicion && posicion === -1) {
+  document.write("<hr/><h1>El número no esta en el array</h1>");
   document.write("<h1>El número no esta en el array</h1>");
 } else {
   document.write("<h1>El número esta en la posicion " + posicion + "</h1>");
