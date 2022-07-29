@@ -29,4 +29,11 @@ $(document).ready(function () {
   // Selectores de atributo
   $('[title="Google"]').css("background", "#ccc");
   $('[title="Facebook"]').css("background", "blue");
+
+  // Otros
+  //$("p, a").addClass("margen-superior");
+  var busqueda = $("#caja").eq(0).parent().find(".resaltado"); // $("#caja .resaltado");
+  //.parent() busca un nivel mas arriba, puede concatenarse con mas .parent()
+  // eq() indica elemento
+  console.log(busqueda); // imprime por consola el resultado de la busqueda del arbol HTML
 });
