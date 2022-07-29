@@ -22,6 +22,9 @@ getUsuarios()
   .then((data) => data.json())
   .then((user) => {
     mostrarJanet(user.data);
+  })
+  .catch((error) => {
+    alert("Error en las peticiones");
   });
 
 function getUsuarios() {
