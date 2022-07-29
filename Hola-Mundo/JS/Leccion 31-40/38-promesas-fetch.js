@@ -1,5 +1,4 @@
 "use strict";
-
 // Promesas
 // utiles con muchos call back end, evita reiteracion de call backs
 
