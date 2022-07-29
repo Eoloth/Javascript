@@ -67,6 +67,7 @@ function mostrarJanet(user) {
   let nombre = document.createElement("h4");
   nombre.innerHTML = user.first_name + " " + user.last_name;
   div_janet.appendChild(nombre);
+  console.log(user);
 
   let imagen = document.createElement("img");
   imagen.src = user.avatar;
