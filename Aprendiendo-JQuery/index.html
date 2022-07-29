@@ -7,16 +7,17 @@
     <script type="text/javascript" src="/JS/01-selectores.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 
-    <script>
-        $(document).ready(function(){
-            console.log("JQuery y la web cargados");
-        })
-    </script>
+    <style>
+        .zebra {
+            border: 5px dashed black;
+        }
+    </style>
 </head>
 <body>
     <h1>Aprendiendo JQuery</h1>
-    <p id="rojo">Ejercicios de JQuery</p>
-    <p id="amarillo">Practicando con selectores</p>
-    <p id="verde">Quiero ser un parrafo verde</p>
+    <p id="rojo" class="sin_borde">Ejercicios de JQuery</p>
+    <p id="amarillo" class="zebra">Practicando con selectores</p>
+    <p id="verde" class="sin_borde">Quiero ser un parrafo verde</p>
+    <p class="zebra">Soy un parrafo blanco</p>
 </body>
 </html>
