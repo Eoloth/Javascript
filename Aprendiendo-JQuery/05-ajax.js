@@ -9,7 +9,6 @@ $(document).ready(function () {
     });
   });
 
-  /*
   var usuario = {
     nombre: "Juan",
     apellido: "Perez",
@@ -18,17 +17,36 @@ $(document).ready(function () {
     console.log(response);
   });
 
-   */
   $("#formulario").submit(function (e) {
     e.preventDefault();
     var usuario = {
       nombre: $('input[name="nombre"]').val(),
       apellido: $('input[name="apellido"]').val(),
     };
+    /*
     $.post($(this).attr("action"), usuario, function (response) {
       console.log(response);
     }).done(function () {
       alert("Usuario añadido");
+    });
+  */
+
+    $.ajax({
+      type: "POST",
+      dataType: "json",
+      contentType: "application/json",
+      url: "https://reqres.in/api/users",
+      data: usuario,
+      beforeSend: function () {
+        console.log("Enviando usuario...");
+      },
+      success: function (response) {
+        console.log(response);
+      },
+      error: function (error) {
+        console.log("Ha ocurrido un error");
+      },
+      timeout: 3000,
     });
     return false;
   });
