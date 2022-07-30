@@ -16,7 +16,9 @@ $(document).ready(function () {
     $(this).hide();
     mostrar.show();
     // caja.fadeOut("slow");
-    caja.fadeTo("slow", 0.2);
+    caja.slideUp("slow", function () {
+      console.log("Cartel ocultado");
+    });
   });
 
   // En un solo botón
