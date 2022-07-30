@@ -14,6 +14,19 @@
             background: yellow;
             transition: 300ms all;
         }
+        input{
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+        }
+        #datos{
+            border: 4px dashed black;
+            padding: 10px;
+            width: 250px;
+            height: 50px;
+            margin-top: 10px;
+            display: block;
+        }
         /*
         #caja:hover{
 
@@ -21,11 +34,16 @@
             cursor: pointer;
         }
 
+
          */
     </style>
 </head>
 <body>
     <h1>Aprendiendo Jquery</h1>
+    <form>
+        <input type="text" id="nombre" />
+    </form>
+    <div id="datos"></div>
     <div id="caja">Soy una caja</div>
 </body>
 </html>

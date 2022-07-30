@@ -26,4 +26,15 @@ $(document).ready(function () {
   caja.dblclick(function () {
     $(this).css("background", "pink").css("color", "yellow");
   });
+
+  // Focus y Blur
+  var nombre = $("#nombre");
+
+  nombre.focus(function () {
+    $(this).css("border", "2px solid green");
+  });
+  nombre.blur(function () {
+    $(this).css("border", "1px solid transparent");
+    $("#datos").text($(this).val()).show();
+  });
 });
