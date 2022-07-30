@@ -23,4 +23,45 @@ $(document).ready(function () {
   $("#todoEnUno").click(function () {
     caja.toggle("fast"); // Toggle, SlideToggle, SlideDown, SlideUp
   });
+
+  $("#animame").click(function () {
+    caja
+      .animate(
+        {
+          marginLeft: "500px",
+          fontSize: "40px",
+          height: "110px",
+        },
+        "slow"
+      )
+      .animate(
+        {
+          borderRadius: "900px",
+          marginTop: "80px",
+        },
+        "slow"
+      )
+      .animate(
+        {
+          borderRadius: "0px",
+          marginLeft: "0px",
+        },
+        "slow"
+      )
+      .animate(
+        {
+          borderRadius: "100px",
+          marginTop: "0px",
+        },
+        "slow"
+      )
+      .animate(
+        {
+          marginLeft: "500px",
+          fontSize: "40px",
+          height: "110px",
+        },
+        "slow"
+      );
+  });
 });
