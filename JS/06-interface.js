@@ -1,3 +1,25 @@
 $(document).ready(function () {
-  console.log("Hola");
+  // Mover elemento por la pagina
+  $(".elemento").draggable();
+
+  // Redimensionar elemento
+  $(".elemento").resizable();
+
+  // Seleccionar elemento
+  //$(".lista-seleccionable").selectable();
+
+  // Ordenar elemento
+  $(".lista-seleccionable").sortable({
+    update: function (event, ui) {
+      console.log("Ordenando la lista");
+    },
+  });
+
+  // Soltar y arrastrar elemento (drag and drop)
+  $("#elemento-movido").draggable();
+  $("#area").droppable({
+    drop: function () {
+      console.log("Soltando elemento dentro del área");
+    },
+  });
 });
