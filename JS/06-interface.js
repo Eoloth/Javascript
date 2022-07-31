@@ -22,4 +22,9 @@ $(document).ready(function () {
       console.log("Soltando elemento dentro del área");
     },
   });
+
+  // Efectos
+  $("#mostrar").click(function () {
+    $(".caja-efectos").toggle("explode", 1000);
+  });
 });
