@@ -2,11 +2,23 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Projecto en JavaScript</title>
+    <alt>Projecto en JavaScript</alt>
 
     <!-- Estilos CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Mis scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
+
   <body>
     <section id="global">
       <!-- Cabecera -->
@@ -24,9 +36,15 @@
           </ul>
         </nav>
       </header>
-      <!-- Slider -->
-      <div id="slider"></div>
 
+      <!-- Slider -->
+      <div id="slider">
+      <div class="slider">
+        <div><img src="img/hojas.jpg" alt="hojas"></div>
+        <div><img src="img/rojo.jpg" alt="rojo"></div>
+        <div><img src="img/cielo.jpg" alt="cielo"></div>
+      </div>
+      </div>
       <!-- Contenido -->
       <section id="content">
         <div id="posts">
