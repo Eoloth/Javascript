@@ -9,15 +9,15 @@
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!-- Slider -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
-    />
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <!-- Moment JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/locale/es.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="/JS/jquery-ui-1.13.2/jquery-ui.min.js"
+    ></script>
+
     <!-- Mis scripts -->
     <script type="text/javascript" src="js/main.js"></script>
   </head>
@@ -45,18 +45,11 @@
         </nav>
       </header>
 
-      <!-- Slider -->
-      <div id="slider">
-        <div class="slider">
-          <div><img src="img/hojas.jpg" alt="hojas" /></div>
-          <div><img src="img/rojo.jpg" alt="rojo" /></div>
-          <div><img src="img/cielo.jpg" alt="cielo" /></div>
-        </div>
-      </div>
       <!-- Contenido -->
       <section id="content">
-        <div id="posts">
-          <!-- Cargar posts desde json -->
+        <div id="box">
+          <!-- Cargar un reloj -->
+          <div id="reloj"></div>
         </div>
 
         <aside id="sidebar">
@@ -74,7 +67,7 @@
             <h4><span>Identificate</span></h4>
             <form>
               <label for="name"> Nombre </label>
-              <input type="text" name="name" id="form_name"/>
+              <input type="text" name="name" id="form_name" />
 
               <label for="email"> Email </label>
               <input type="email" name="mail" />
@@ -89,8 +82,9 @@
         <div class="clear-fix"></div>
       </section>
     </section>
-    <footer>Master en JavaScript &copy;
-    <a href="#" class="subir">Ir arriba</a>
+    <footer>
+      Master en JavaScript &copy;
+      <a href="#" class="subir">Ir arriba</a>
     </footer>
   </body>
 </html>
