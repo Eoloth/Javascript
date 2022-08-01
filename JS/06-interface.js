@@ -33,6 +33,11 @@ $(document).ready(function () {
   // Dialog
   $("#lanzar-popup").click(function () {
     $("#popup").dialog();
-  }); // Date picker
+  });
+
+  // Date picker
   $("#calendario").datepicker();
+
+  // Tabs
+  $("#pestanas").tabs();
 });
