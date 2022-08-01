@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Efectos</title>
     <script type="text/javascript" src="/JS/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../JS/05-ajax.js"></script>
 
     <style>
-        #datos{
-            border: 2px solid green;
-            width: 250px;
-            height: 250px;
-            overflow: scroll;
-        }
+      #datos {
+        border: 2px solid green;
+        width: 250px;
+        height: 250px;
+        overflow: scroll;
+      }
     </style>
-</head>
-<body>
-<h1>AJAX</h1>
+  </head>
+  <body>
+    <h1>AJAX</h1>
 
-<form action="https://reqres.in/api/users" method="POST" id="formulario">
-    Nombre: <input type="text" name="nombre" />
-    Apellido: <input type="text" name="apellido" />
-    <input type="submit" value="Enviar" />
-</form>
+    <form action="https://reqres.in/api/users" method="POST" id="formulario">
+      Nombre: <input type="text" name="nombre" /> Apellido:
+      <input type="text" name="apellido" />
+      <input type="submit" value="Enviar" />
+    </form>
 
-<div id="datos"></div>
-
-</body>
+    <div id="datos"></div>
+  </body>
 </html>
