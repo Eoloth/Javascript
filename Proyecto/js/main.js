@@ -107,6 +107,7 @@ $(document).ready(function () {
   $("#to-blue").click(function () {
     theme.attr("href", "css/blue.css");
   });
+
   // Scroll arriba de la web
   $(".subir").click(function (e) {
     e.preventDefault();
@@ -116,5 +117,26 @@ $(document).ready(function () {
       },
       500
     );
+    return false;
   });
+
+  // Login falso
+  $("#login").submit(function () {
+    var form = $("#form_name").val();
+    localStorage.setItem("form_name", form);
+  });
+
+  var form_name = localStorage.getItem("form_name");
+  if (form_name != null && form_name !== "undefined") {
+    var about_parrafo = $("#about p");
+    about_parrafo.html("<strong>Bienvenido:" + form_name + "</strong> ");
+    about_parrafo.append("<a href='#' id='logout'>Cerrar Sesion</a>");
+
+    $("#login").hide();
+
+    $("#logout").click(function () {
+      localStorage.clear();
+      location.reload();
+    });
+  }
 });
