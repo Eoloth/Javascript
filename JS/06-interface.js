@@ -27,4 +27,6 @@ $(document).ready(function () {
   $("#mostrar").click(function () {
     $(".caja-efectos").toggle("explode", 1000);
   });
+  // Tooltip
+  $(document).tooltip();
 });
