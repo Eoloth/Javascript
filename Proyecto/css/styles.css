@@ -129,7 +129,9 @@ h2 {
 
 form input[type="text"],
 form input[type="email"],
-form input[type="password"] {
+form input[type="password"],
+form input[type="number"],
+select {
   width: 90%;
   padding: 5px;
   margin-bottom: 10px;
@@ -197,7 +199,7 @@ footer {
   background: #e84855;
 }
 
-.subir{
+.subir {
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -205,17 +207,17 @@ footer {
   float: right;
 }
 
-#box{
+#box {
   width: 60%;
   float: left;
   margin-top: 40px;
 }
 
-#acordeon{
+#acordeon {
   margin-top: 20px;
 }
 
-#reloj{
+#reloj {
   font-size: 40px;
   font-weight: bold;
   font-family: Helvetica, Arial;
@@ -224,4 +226,26 @@ footer {
   width: 30%;
   padding: 30px;
   margin: 0 auto;
+}
+
+#form_contact{
+    width: 50%;
+    margin-top: 15px;
+  font-family: Helvetica, Arial;
+}
+
+#form_contact label{
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.form-error{
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+  float:right;
+  background: red;
+  padding: 10px;
+  width: 65%;
 }
