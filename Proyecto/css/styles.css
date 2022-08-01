@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.clear-fix{
+    float: none;
+    clear: both;
+}
+
+body {
+    background: url('../img/hojas.jpg');
+    background-attachment: fixed;
+}
+
+#global{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 2px grey;
+}
+
+#logo{
+    font-family: Verdana, Arial;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 75px;
+    background: #235e3b;
+    color: white;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    margin-bottom: 20px;
+    float: left;
+
+}
