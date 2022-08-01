@@ -31,7 +31,7 @@ for (valor in todoslosDivs) {
 seccion.append(hr);
 // console.log(contenidoEnTexto);
 
-// Conseguir elementos por su clase CSS
+// Conseguir elementos por su clase css
 var divsRojos = document.getElementsByClassName("rojo");
 var divsAmarillos = document.getElementsByClassName("amarillo");
 divsAmarillos[0].style.background = "yellow";

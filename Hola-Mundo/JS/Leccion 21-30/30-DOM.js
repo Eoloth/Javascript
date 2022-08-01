@@ -15,7 +15,7 @@ var caja = document.querySelector("#micaja"); // # selecciona elemento por id
 
 caja.innerHTML = "Hola Mundo"; // Cambiar el contenido de un elemento
 
-// estilos CSS
+// estilos css
 
 caja.style.padding = "20px"; // Cambiar el padding a un valor deseado
 caja.style.color = "white"; // Cambiar el color de letra
