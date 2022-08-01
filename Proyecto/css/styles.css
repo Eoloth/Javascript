@@ -157,18 +157,19 @@ form input[type="submit"] {
 }
 
 footer {
-    font-family:Helvetica, Arial;
-    color:white;
-    height: 47px;
-    background: rgba(51, 51, 51, 0.70);
-    margin: 0 auto;
-    width: 65%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 50px;
-    line-height: 47px;
+  font-family: Helvetica, Arial;
+  color: white;
+  height: 47px;
+  background: rgba(51, 51, 51, 0.7);
+  margin: 0 auto;
+  width: 65%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+  line-height: 47px;
 }
 
-.bx-wrapper, .bx-viewport {
+.bx-wrapper,
+.bx-viewport {
   height: 250px !important;
 }
