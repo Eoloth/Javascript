@@ -195,3 +195,11 @@ footer {
 #to-red {
   background: #e84855;
 }
+
+.subir{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  float: right;
+}
