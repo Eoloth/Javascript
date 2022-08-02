@@ -1,5 +1,5 @@
 // Clase (molde del objeto
-class Camiseta {
+export class Camiseta {
   // Propiedades (caracteristicas del objeto)
   public color: string;
   public modelo: string;
@@ -22,6 +22,7 @@ class Camiseta {
   }
 }
 
+/*
 // @ts-ignore
 var camiseta = new Camiseta("Rojo", "Manga Larga", "Nike", "L", 10);
 
@@ -29,3 +30,4 @@ var playera = new Camiseta("Azul", "Manga Corta", "Adidas", "XL", 12);
 
 console.log(camiseta);
 console.log(playera);
+ */
