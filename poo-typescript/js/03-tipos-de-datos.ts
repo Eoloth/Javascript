@@ -1,5 +1,6 @@
 // string
-let cadena: string = "Hola mundo";
+let cadena: string | number = "Hola mundo"; //pipeline permite varios tipos de datos
+cadena = 12;
 
 // number
 let edad: number = 129;
