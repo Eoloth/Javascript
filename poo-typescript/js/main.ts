@@ -1,4 +1,4 @@
-import { Camiseta } from "./camiseta";
+//import { Camiseta } from "./camiseta";
 
 class Main {
   constructor() {

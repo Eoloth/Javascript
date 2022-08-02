@@ -1,5 +1,11 @@
+// Intrface
+interface CamisetaBase {
+  setColor(color);
+  getColor();
+}
+
 // Clase (molde del objeto
-export class Camiseta {
+class Camiseta implements CamisetaBase {
   // Propiedades (caracteristicas del objeto)
   public color: string;
   public modelo: string;
@@ -22,12 +28,15 @@ export class Camiseta {
   }
 }
 
+var camiseta = new Camiseta("Rojo", "Manga Larga", "Nike", "L", 10);
+console.log(camiseta);
+
 /*
 // @ts-ignore
-var camiseta = new Camiseta("Rojo", "Manga Larga", "Nike", "L", 10);
+
 
 var playera = new Camiseta("Azul", "Manga Corta", "Adidas", "XL", 12);
 
-console.log(camiseta);
+
 console.log(playera);
  */
