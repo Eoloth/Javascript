@@ -23,10 +23,9 @@ class Camiseta {
 }
 
 // @ts-ignore
-var camiseta = new Camiseta();
-camiseta.setColor("Rojo");
+var camiseta = new Camiseta("Rojo", "Manga Larga", "Nike", "L", 10);
 
 var playera = new Camiseta("Azul", "Manga Corta", "Adidas", "XL", 12);
 
-console.log(camiseta.getColor());
+console.log(camiseta);
 console.log(playera);
