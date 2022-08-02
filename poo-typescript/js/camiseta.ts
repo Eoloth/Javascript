@@ -31,12 +31,25 @@ class Camiseta implements CamisetaBase {
 var camiseta = new Camiseta("Rojo", "Manga Larga", "Nike", "L", 10);
 console.log(camiseta);
 
-/*
-// @ts-ignore
+// Herencia
 
-
-var playera = new Camiseta("Azul", "Manga Corta", "Adidas", "XL", 12);
-
-
-console.log(playera);
- */
+// Clase hija
+class Sudadera extends Camiseta {
+  public capucha: boolean;
+  public mangaCorta: boolean;
+  constructor(color, modelo, marca, talla, precio, capucha, mangaCorta) {
+    super(color, modelo, marca, talla, precio);
+    this.capucha = capucha;
+    this.mangaCorta = mangaCorta;
+  }
+}
+var sudadera_Adidas = new Sudadera(
+  "Verde",
+  "Manga Corta",
+  "Adidas",
+  "XL",
+  12,
+  true,
+  false
+);
+console.log(sudadera_Adidas);
