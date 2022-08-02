@@ -15,7 +15,8 @@ function estampar(logo: string) {
 }
 
 // Clase (molde del objeto
-@estampar("Gucci")
+// @ts-ignore
+//@estampar("Gucci")
 class Camiseta implements CamisetaBase {
   // Propiedades (caracteristicas del objeto)
   public color: string;
@@ -41,7 +42,7 @@ class Camiseta implements CamisetaBase {
 
 var camiseta = new Camiseta("Rojo", "Manga Larga", "Nike", "L", 10);
 console.log(camiseta);
-camiseta.estampacion();
+//camiseta.estampacion();
 
 // Herencia
 
