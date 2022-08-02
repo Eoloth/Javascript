@@ -1,5 +1,7 @@
+type alfanumerico = string | number;
+
 // string
-let cadena: string | number = "Hola mundo"; //pipeline permite varios tipos de datos
+let cadena: alfanumerico = "Hola mundo"; //pipeline permite varios tipos de datos
 cadena = 12;
 
 // number
