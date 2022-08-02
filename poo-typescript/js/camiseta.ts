@@ -36,20 +36,18 @@ console.log(camiseta);
 // Clase hija
 class Sudadera extends Camiseta {
   public capucha: boolean;
-  public mangaCorta: boolean;
-  constructor(color, modelo, marca, talla, precio, capucha, mangaCorta) {
-    super(color, modelo, marca, talla, precio);
+
+  setCapucha(capucha: boolean) {
     this.capucha = capucha;
-    this.mangaCorta = mangaCorta;
+  }
+
+  getCapucha() {
+    return this.capucha;
   }
 }
-var sudadera_Adidas = new Sudadera(
-  "Verde",
-  "Manga Corta",
-  "Adidas",
-  "XL",
-  12,
-  true,
-  false
-);
+
+var sudadera_Adidas = new Sudadera("Verde", "Manga Corta", "Adidas", "XL", 12);
+sudadera_Adidas.setCapucha(true);
+sudadera_Adidas.setColor("Verde");
+sudadera_Adidas.getCapucha();
 console.log(sudadera_Adidas);
