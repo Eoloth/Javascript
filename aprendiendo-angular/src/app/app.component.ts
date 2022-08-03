@@ -13,9 +13,9 @@ export class AppComponent {
   public config;
 
   constructor() {
+    this.config = Configuracion;
     this.title = Configuracion.titulo;
     this.descripcion = Configuracion.descripcion;
-    this.config = Configuracion;
   }
 
   ocultarVideojuegos(value: boolean) {
