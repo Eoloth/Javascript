@@ -1,10 +1,13 @@
 <div>
   <h1>
-    ANGULAR
+    Bienvendio al {{title}}
   </h1>
   <p>Vamos a aprender Angular</p>
 
-  <videojuego> Videojuego </videojuego>
+  <button (click)="ocultarVideojuegos(false)" *ngIf="mostar_videojuegos">Ocultar</button>
+  <button (click)="ocultarVideojuegos(true)" *ngIf= "!mostar_videojuegos">Mostrar</button>
+
+  <videojuego *ngIf="mostar_videojuegos"> Videojuego </videojuego>
 
 <zapatillas>Zapatillas</zapatillas>
   <cursos></cursos>
