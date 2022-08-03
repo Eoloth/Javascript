@@ -7,8 +7,14 @@ import { VideojuegoComponent } from './videojuego/videojuego.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
 import { CursosComponent } from './cursos/cursos.component';
 
+// @ts-ignore
 @NgModule({
-  declarations: [AppComponent, VideojuegoComponent, ZapatillasComponent, CursosComponent],
+  declarations: [
+    AppComponent,
+    VideojuegoComponent,
+    ZapatillasComponent,
+    CursosComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
