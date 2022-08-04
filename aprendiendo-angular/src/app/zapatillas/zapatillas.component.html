@@ -23,7 +23,13 @@
           'text-decoration': !tillas.stock ? 'line-through' : 'none'
         }"
       >
-        {{ tillas.nombre }} - <strong [class.altoPrecio]="tillas.precio >= 90"> $ {{ tillas.precio }}</strong>
+        {{ tillas.nombre }} - <strong [class.altoPrecio]="tillas.precio >= 90"
+      [ngClass]="{
+      'fondoRojo' : tillas.precio > 100,
+      'subrayado' : tillas.marca == 'Nike'
+      }"
+      >
+        $ {{ tillas.precio }}</strong>
       </span>
 
       <span
