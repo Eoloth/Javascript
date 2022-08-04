@@ -36,6 +36,7 @@
 </ul>
 
 <p>El color de la mayoria de nuestras zapatillas es : </p>
+<input type="text" [(ngModel)]="color" />
 <ul [ngSwitch]="color">
   <li *ngSwitchCase="'yellow'">
     El color predominante es el <span [ngStyle]="{'background':color}">amarillo.</span></li>
