@@ -23,13 +23,14 @@
           'text-decoration': !tillas.stock ? 'line-through' : 'none'
         }"
       >
-        {{ tillas.nombre }} - <strong>$ {{ tillas.precio }}</strong>
+        {{ tillas.nombre }} - <strong [class.altoPrecio]="tillas.precio >= 90"> $ {{ tillas.precio }}</strong>
       </span>
 
       <span
         *ngIf="tillas.precio <= 80"
         [style.background]="tillas.precio <= 80 ? 'green' : 'transparent'"
         [style.color]="tillas.precio <= 80 ? 'white' : 'black'"
+
       >
         ¡¡EN OFERTA !!</span
       >
