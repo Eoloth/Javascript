@@ -5,13 +5,14 @@
 <input type="text" [(ngModel)]="mi_marca" />
   <button (click)="getMarca()">Mostrar marca</button>
   <button (click)="addMarca()">Añadir marca</button>
-  <button (click)="removeMarca()">Remover marca</button>
 </p>
 <strong><p>{{mi_marca}}</p></strong>
 
 <p>Compra las zapatillas de las mejores marcas</p>
 <ul>
-  <li *ngFor="let marca of marcas">{{ marca }}</li>
+  <li *ngFor="let marca of marcas; let indice = index">{{ indice + ' - ' + marca }}
+  <button (click)="removeMarca(indice)">Borrar</button>
+  </li>
 </ul>
 
 <p>Las zapatillas que tenemos disponibles son las siguientes:</p>
