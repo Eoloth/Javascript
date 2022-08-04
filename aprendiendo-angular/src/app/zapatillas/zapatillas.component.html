@@ -1,14 +1,26 @@
 <h2>{{ titulo }}</h2>
+<p>Compra las zapatillas de las mejores marcas</p>
+<ul>
+  <li *ngFor="let marca of marcas">{{ marca }}</li>
+</ul>
+
+<p>Las zapatillas que tenemos disponibles son las siguientes:</p>
 <ul>
   <li *ngFor="let tillas of zapatillas">
-    {{ tillas.nombre }} - <strong>$ {{ tillas.precio }}</strong>
+      <span
+        [ngStyle]="{
+          'text-decoration': !tillas.stock ? 'line-through' : 'none'
+        }"
+      >
+        {{ tillas.nombre }} - <strong>$ {{ tillas.precio }}</strong>
+      </span>
 
-    <span
-      *ngIf="tillas.precio <= 80"
-      [style.background]="tillas.precio <= 80 ? 'green' : 'transparent'"
-      [style.color]="tillas.precio <= 80 ? 'white' : 'black'"
-    >
-      ¡¡EN OFERTA !!</span
-    >
+      <span
+        *ngIf="tillas.precio <= 80"
+        [style.background]="tillas.precio <= 80 ? 'green' : 'transparent'"
+        [style.color]="tillas.precio <= 80 ? 'white' : 'black'"
+      >
+        ¡¡EN OFERTA !!</span
+      >
   </li>
 </ul>
