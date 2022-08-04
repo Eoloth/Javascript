@@ -1,7 +1,14 @@
 <h2>{{ titulo }}</h2>
 <ul>
-<li *ngFor="let tillas of zapatillas">{{tillas.nombre}} - <strong>$ {{tillas.precio}}</strong>
+  <li *ngFor="let tillas of zapatillas">
+    {{ tillas.nombre }} - <strong>$ {{ tillas.precio }}</strong>
 
-  <span *ngIf="tillas.precio <= 80"> EN OFERTA !!</span>
-</li>
+    <span
+      *ngIf="tillas.precio <= 80"
+      [style.background]="tillas.precio <= 80 ? 'green' : 'transparent'"
+      [style.color]="tillas.precio <= 80 ? 'white' : 'black'"
+    >
+      ¡¡EN OFERTA !!</span
+    >
+  </li>
 </ul>
