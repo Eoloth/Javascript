@@ -14,6 +14,7 @@ export class ZapatillasComponent implements OnInit {
       new Zapatilla('Reebok Classic', 'Rebook', 'Blanco', 100, true),
       new Zapatilla('Nike Runner MD', 'Nike', 'Negras', 80, true),
       new Zapatilla('Adidas Yezzy', 'Adidas', 'Blanco', 120, true),
+      new Zapatilla('Michelin NAVY', 'Michelin', 'Azules', 60, false),
     ];
   }
   ngOnInit() {

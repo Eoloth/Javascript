@@ -1,5 +1,7 @@
 <h2>{{ titulo }}</h2>
 <ul>
-<li *ngFor="let tillas of zapatillas">{{tillas.nombre}} - <strong>{{tillas.precio}}</strong>
+<li *ngFor="let tillas of zapatillas">{{tillas.nombre}} - <strong>$ {{tillas.precio}}</strong>
+
+  <span *ngIf="tillas.precio <= 80"> EN OFERTA !!</span>
 </li>
 </ul>
