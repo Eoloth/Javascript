@@ -1,8 +1,6 @@
 <p>Página principal</p>
 
-<div *ngIf="indentificado; then siIdentificado else noIdentificado">
-
-</div>
+<div *ngIf="indentificado; then siIdentificado else noIdentificado"></div>
 
 <ng-template #siIdentificado>
   <h3>Estas identificado en la aplicación</h3>
