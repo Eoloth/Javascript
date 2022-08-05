@@ -1,6 +1,8 @@
 {{fecha | date: 'dd/MM/yy'}}
 {{fecha  | date: 'fullDate' | uppercase}} <br>
-{{'HOLA MUNDO USANDO PIPIES' | lowercase }}
+{{'HOLA MUNDO USANDO PIPIES' | lowercase }} <br>
+{{ 4 | calculadora : 2}}
+
 <hr>
 <input type="text" [(ngModel)]="userId" (keyup.enter)="cargaUsuario()" />
 
