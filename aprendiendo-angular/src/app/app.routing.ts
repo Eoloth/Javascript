@@ -19,7 +19,7 @@ const appRoutes: Routes = [
   { path: 'cursos/:nombre', component: CursosComponent },
   { path: 'cursos/:nombre/:followers', component: CursosComponent },
   { path: 'cursos/:nombre/:apellidos', component: CursosComponent },
-  { path: 'Externo', component: ExternoComponent },
+  { path: 'externo', component: ExternoComponent },
   { path: '**', component: HomeComponent },
 ];
 

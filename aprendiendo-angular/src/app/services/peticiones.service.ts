@@ -8,7 +8,7 @@ export class PeticionesService {
   constructor(public _http: HttpClient) {
     this.url = 'https://reqres.in/';
   }
-  getUser(): Observable<any> {
-    return this._http.get(this.url + 'api/users/2');
+  getUser(userId: string): Observable<any> {
+    return this._http.get(this.url + 'api/users/' + userId);
   }
 }
