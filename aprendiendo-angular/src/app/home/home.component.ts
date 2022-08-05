@@ -17,4 +17,7 @@ export class HomeComponent implements OnInit {
   setIdentificado() {
     this.indentificado = true;
   }
+  unsetIdentificado() {
+    this.indentificado = false;
+  }
 }
