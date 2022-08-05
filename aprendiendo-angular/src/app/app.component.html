@@ -10,6 +10,17 @@
 
   <p>{{descripcion}}</p>
 
+  <nav>
+    <a [routerLink]="['/']">Home</a>
+    &nbsp;
+    <a [routerLink]="['/zapatillas']">Zapatillas</a>
+    &nbsp;
+    <a [routerLink]="['/cursos']">Cursos</a>
+    &nbsp;
+    <a [routerLink]="['/videojuego']">Videojuegos</a>
+
+
+  </nav>
   <!--
   <button (click)="ocultarVideojuegos(false)" *ngIf="mostar_videojuegos">Ocultar</button>
   <button (click)="ocultarVideojuegos(true)" *ngIf= "!mostar_videojuegos">Mostrar</button>
