@@ -25,5 +25,13 @@ app.get("/test", (req, res) => {
   });
 });
 
+app.post("/test", (req, res) => {
+  console.log(req.body.nombre);
+  console.log(req.query.web);
+  res.status(200).send({
+    message: "Hola mundo desde mi API de NodeJS",
+  });
+});
+
 // exportar modulo
 module.exports = app;
