@@ -84,6 +84,22 @@ var controller = {
       }
     );
   },
+
+  deleteProject: function (req, res) {
+    var projectId = req.params.id;
+
+    Project.findByIdAndDelete(projectId, (err, projectDeleted) => {
+      if (err)
+        return res
+          .status(500)
+          .send({ message: "No se ha podido borrar el projecto" });
+      if (!projectDeleted)
+        return res
+          .status(404)
+          .send({ message: "No se puede eliminar ese projecto" });
+      return res.status(200).send({ project: projectDeleted });
+    });
+  },
 };
 
 module.exports = controller;
