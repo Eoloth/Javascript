@@ -35,17 +35,12 @@ var controller = {
           .send({ message: "No se ha podido guardar el projecto" });
       return res.status(200).send({ project: projectStored });
     });
-
-    return res.status(200).send({
-      project: project,
-      message: "Metodo saveProject",
-    });
   },
 
   getProject: function (req, res) {
     var projectId = req.params.id;
     if (projectId == null)
-      return res.status(404).send({ message: "Projecto no existe" });
+      return res.status(404).send({ message: "Projecto no existe" }); //metodo para id optativa
 
     Project.findById(projectId, (err, project) => {
       if (err)
@@ -54,6 +49,22 @@ var controller = {
         return res.status(404).send({ message: "Projecto no existe" });
       return res.status(500).send({ project });
     });
+  },
+
+  getProjects: function (req, res) {
+    Project.find({})
+      .sort("+year") //+year de mas nuevo a mas antiguo. -year para de menor a mayor año
+      .exec((err, projects) => {
+        if (err)
+          return res
+            .status(500)
+            .send({ message: "Error al devolver los datos" });
+        if (!projects)
+          return res
+            .status(404)
+            .send({ message: "No hay projectos para mostrar" });
+        return res.status(200).send({ projects });
+      });
   },
 };
 
