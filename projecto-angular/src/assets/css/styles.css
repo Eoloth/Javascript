@@ -1,0 +1,78 @@
+/* Importar fuentes custom */
+
+@font-face {
+  font-family: 'yanone';
+  src: url('fonts/yanone.ttf');
+}
+
+@font-face {
+  font-family: 'finger';
+  src: url('fonts/finger.ttf');
+}
+
+/* Generales */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'yanone', Arial, Helvetica;
+  font-size: 20px;
+  background: url("img/pattern.png");
+  background-attachment: fixed;
+}
+
+.clearfix{
+  float:none;
+  clear:both;
+}
+
+/* Barra de navegación o header */
+
+header {
+  background: rgba(0, 0, 0, 0.41);
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-transform: uppercase;
+}
+
+header ul{
+  display: block;
+  width: 40%;
+  height: inherit;
+  margin: 0 auto;
+}
+
+header ul li{
+  display: inline-block;
+  height: inherit;
+  line-height: 90px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: block;
+  height: inherit;
+  line-height: 60px;
+  transition: all 300ms;
+}
+
+header a:hover{
+  background: rgba(0,0,0,0.8);
+}
+
+header #logo a{
+  background: transparent;
+}
