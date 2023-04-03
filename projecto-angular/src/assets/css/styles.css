@@ -171,3 +171,39 @@ article.about-me {
   display: block;
 }
 
+form {
+  width: 50%;
+}
+
+form label {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form textarea {
+  width: 80%;
+  padding: 5px;
+}
+
+form button,
+form input[type="submit"] {
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  display: block;
+}
+
+from input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
