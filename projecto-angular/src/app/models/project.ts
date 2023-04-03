@@ -5,6 +5,7 @@ export class Project {
     public description: string,
     public category: string,
     public year: number,
-    public langs: string
+    public langs: string,
+    public image: string
   ) {}
 }

@@ -19,7 +19,7 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     ErrorComponent,
   ],
-  imports: [BrowserModule, routing],
+  imports: [BrowserModule, HttpClientModule, FormsModule, routing],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent],
 })
