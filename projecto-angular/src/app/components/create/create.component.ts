@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../../models/project';
 import { ProjectService } from '../../services/project.service';
-import { NgForm } from '@angular/forms';
-import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-create',
@@ -15,7 +13,7 @@ export class CreateComponent implements OnInit {
   public project: Project;
 
   constructor(private _projectService: ProjectService) {
-    this.title = 'Crear projecto';
+    this.title = 'Crear proyecto';
     this.project = new Project('', '', '', '', 2020, '', '');
   }
 

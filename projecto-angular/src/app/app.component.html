@@ -1,11 +1,11 @@
 <header>
-<ul>
-  <li><a routerLink="/sobre-mi" [routerLinkActive]="['actived']">Sobre Mi</a>  </li>
-  <li><a routerLink="/projectos" [routerLinkActive]="['actived']">Projecto</a></li>
-  <li id="logo"><a href="#">RM</a> </li>
-  <li><a routerLink="/crear-projecto" [routerLinkActive]="['actived']">Crear Projecto</a></li>
-  <li><a routerLink="/contacto" [routerLinkActive]="['actived']">Contacto</a></li>
-</ul>
+  <ul>
+    <li><a [routerLinkActive]="['actived']" routerLink="/sobre-mi">Sobre Mi</a></li>
+    <li><a [routerLinkActive]="['actived']" routerLink="/proyectos">Proyectos</a></li>
+    <li id="logo"><a href="#">RM</a></li>
+    <li><a [routerLinkActive]="['actived']" routerLink="/crear-projecto">Crear Projecto</a></li>
+    <li><a [routerLinkActive]="['actived']" routerLink="/contacto">Contacto</a></li>
+  </ul>
 </header>
 
 <section id="content">

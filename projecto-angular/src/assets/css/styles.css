@@ -1,13 +1,13 @@
 /* Importar fuentes custom */
 
 @font-face {
-  font-family: "yanone";
-  src: url("fonts/yanone.ttf");
+  font-family: "Hack Nerd Font";
+  src: url("fonts/Hack Regular Nerd Font Complete.ttf");
 }
 
 @font-face {
-  font-family: "finger";
-  src: url("fonts/finger.ttf");
+  font-family: "Hack Nerd Font";
+  src: url("fonts/Hack Regular Nerd Font Complete.ttf");
 }
 
 /* Generales */
@@ -18,8 +18,8 @@
 }
 
 body {
-  font-family: "yanone", Arial, Helvetica;
-  font-size: 20px;
+  font-family: "Hack Nerd Font", Arial, Helvetica;
+  font-size: 15px;
   background: url("img/pattern.png");
   background-attachment: fixed;
 }
@@ -34,7 +34,7 @@ body {
 header {
   background: rgba(0, 0, 0, 0.41);
   height: 60px;
-  width: 100%;
+  width: 110%;
   position: fixed;
   top: 0;
   left: 0;
@@ -55,7 +55,7 @@ header ul li {
   line-height: 90px;
   margin: 0 auto;
   text-align: center;
-  margin-top: -3px;
+  margin-top: -6px;
 }
 
 header a {
@@ -124,7 +124,7 @@ footer {
 }
 
 #title h1 {
-  font-family: "finger";
+  font-family: "Hack Nerd Font";
   font-size: 60px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
@@ -156,3 +156,18 @@ article.about-me {
   padding-bottom: 20px;
   text-align: justify;
 }
+
+/* Seccion con formulario */
+
+.container {
+  padding: 50px;
+  padding-top: 10px;
+}
+
+.container h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+

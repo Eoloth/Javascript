@@ -11,7 +11,7 @@ import { ErrorComponent } from './components/error/error.component';
 const appRouters: Routes = [
   { path: '', component: AppComponent },
   { path: 'sobre-mi', component: AboutMeComponent },
-  { path: 'projectos', component: ProjectsComponent },
+  { path: 'proyectos', component: ProjectsComponent },
   { path: 'crear-projecto', component: CreateComponent },
   { path: 'contacto', component: ContactComponent },
   { path: '**', component: ErrorComponent }, //ruta 404
