@@ -1,13 +1,13 @@
 /* Importar fuentes custom */
 
 @font-face {
-  font-family: 'yanone';
-  src: url('fonts/yanone.ttf');
+  font-family: "yanone";
+  src: url("fonts/yanone.ttf");
 }
 
 @font-face {
-  font-family: 'finger';
-  src: url('fonts/finger.ttf');
+  font-family: "finger";
+  src: url("fonts/finger.ttf");
 }
 
 /* Generales */
@@ -17,16 +17,16 @@
   padding: 0;
 }
 
-body{
-  font-family: 'yanone', Arial, Helvetica;
+body {
+  font-family: "yanone", Arial, Helvetica;
   font-size: 20px;
   background: url("img/pattern.png");
   background-attachment: fixed;
 }
 
-.clearfix{
-  float:none;
-  clear:both;
+.clearfix {
+  float: none;
+  clear: both;
 }
 
 /* Barra de navegación o header */
@@ -42,14 +42,14 @@ header {
   text-transform: uppercase;
 }
 
-header ul{
+header ul {
   display: block;
   width: 50%;
   height: inherit;
   margin: 0 auto;
 }
 
-header ul li{
+header ul li {
   display: inline-block;
   height: inherit;
   line-height: 90px;
@@ -58,7 +58,7 @@ header ul li{
   margin-top: -3px;
 }
 
-header a{
+header a {
   color: #fff;
   text-decoration: none;
   font-size: 1.2em;
@@ -70,24 +70,26 @@ header a{
   transition: all 300ms;
 }
 
-header a:hover{
-  background: rgba(0,0,0,0.8);
+header a:hover,
+.actived {
+  background: rgba(0, 0, 0, 0.8);
 }
+
 /* Logotipo */
 
-#logo{
+#logo {
   font-family: "finger";
   font-size: 30px;
 }
 
-#logo a{
+#logo a {
   transition: color 500ms, transform 500ms;
 }
 
-#logo a:hover{
+#logo a:hover {
   background: transparent;
   color: black;
-  transform: scale(1.50, 1.50);
+  transform: scale(1.5, 1.5);
 }
 
 /* Contenedor principal */
@@ -95,7 +97,7 @@ header a:hover{
 #content {
   min-height: 500px;
   padding-top: 120px;
-  width:75%;
+  width: 75%;
   margin: 0 auto;
   box-shadow: 0 0 40px black;
   border-left: 1px solid #b7b7b7;
@@ -108,6 +110,49 @@ footer {
   width: 75%;
   margin: 0 auto;
   padding-top: 15px;
-  color: rgba(0,0,0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
+}
+
+/* Sobre mi*/
+#title {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+#title h1 {
+  font-family: "finger";
+  font-size: 60px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+#title h2 {
+  font-size: 25px;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+article.about-me {
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-bottom: 50px;
+  font-size: 23px;
+}
+
+.about-me h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.about p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
 }
