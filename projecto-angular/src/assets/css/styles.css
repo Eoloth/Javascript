@@ -44,7 +44,7 @@ header {
 
 header ul{
   display: block;
-  width: 40%;
+  width: 50%;
   height: inherit;
   margin: 0 auto;
 }
@@ -55,6 +55,7 @@ header ul li{
   line-height: 90px;
   margin: 0 auto;
   text-align: center;
+  margin-top: -3px;
 }
 
 header a{
@@ -72,7 +73,19 @@ header a{
 header a:hover{
   background: rgba(0,0,0,0.8);
 }
+/* Logotipo */
 
-header #logo a{
+#logo{
+  font-family: "finger";
+  font-size: 30px;
+}
+
+#logo a{
+  transition: color 500ms, transform 500ms;
+}
+
+#logo a:hover{
   background: transparent;
+  color: black;
+  transform: scale(1.50, 1.50);
 }
