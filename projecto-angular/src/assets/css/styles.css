@@ -206,3 +206,15 @@ input[type="submit"]:hover {
   color: #ffffff;
   border: 1px solid #000000;
 }
+
+input[disabled] {
+  opacity: 0.4;
+}
+
+.form_error {
+  padding: 3px;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 13px;
+  margin-left: 5px;
+}
