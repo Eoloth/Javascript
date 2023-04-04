@@ -10,13 +10,13 @@
     <p>
       <label for="description">Decripción</label>
       <input #description="ngModel" [(ngModel)]="project.description" id="description" name="description"
-             ngModel type="text">
+             ngModel required type="text">
       <span *ngIf="description.touched && !description.valid">La descripción es obligatoria</span>
     </p>
     <p>
       <label for="category">Categoría</label>
       <textarea #category="ngModel" [(ngModel)]="project.category" id="category" name="category"
-                ngModel> </textarea>
+                ngModel required> </textarea>
       <span *ngIf="category.touched && !category.valid">La categoría es obligatoria</span>
     </p>
     <p>
@@ -24,8 +24,8 @@
       <input #year="ngModel" [(ngModel)]="project.year" id="year" name="year" ngModel type="number">
     </p>
     <p>
-      <label for="name">Lenguajes utilizados</label>
-      <input #langs="ngModel" [(ngModel)]="project.langs" id="langs" name="langs" ngModel type="text">
+      <label for="langs">Lenguajes utilizados</label>
+      <input #langs="ngModel" [(ngModel)]="project.langs" id="langs" name="langs" ngModel required type="text">
       <span *ngIf="langs.touched && !langs.valid">Los lenguajes son obligatorios</span>
     </p>
     <p>
