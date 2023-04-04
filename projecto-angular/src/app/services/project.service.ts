@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Global } from './global';
+import { Project } from '../models/project';
+import { HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class ProjectService {
@@ -12,5 +15,14 @@ export class ProjectService {
 
   testService() {
     return 'Probando el servicio de Angular';
+  }
+
+  saveProject(project: Project): Observable<any> {
+    let params = JSON.stringify(project);
+    let headers = new HttpHeaders().set('Content-Type', 'application/json');
+
+    return this._http.post(this.url + 'save-project', params, {
+      headers: headers,
+    });
   }
 }
