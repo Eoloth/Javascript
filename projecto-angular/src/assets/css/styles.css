@@ -172,7 +172,7 @@ article.about-me {
 }
 
 form {
-  width: 50%;
+  width: 80%;
 }
 
 form label {
@@ -186,12 +186,11 @@ form input[type="text"],
 form input[type="number"],
 form input[type="email"],
 form textarea {
-  width: 80%;
+  width: 40%;
   padding: 5px;
 }
 
-form button,
-form input[type="submit"] {
+input[type="submit"] {
   padding: 10px;
   background-color: black;
   color: #fff;
@@ -202,8 +201,8 @@ form input[type="submit"] {
   display: block;
 }
 
-from input[type="submit"]:hover {
-  background-color: #ffffff;
-  color: #000000;
+input[type="submit"]:hover {
+  background-color: #5e79e3;
+  color: #ffffff;
   border: 1px solid #000000;
 }
