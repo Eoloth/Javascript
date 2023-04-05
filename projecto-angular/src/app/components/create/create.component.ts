@@ -1,8 +1,8 @@
-import {Component, OnInit} from '@angular/core';
-import {Project} from '../../models/project';
-import {ProjectService} from '../../services/project.service';
-import {UploadService} from '../../services/upload.service';
-import {Global} from '../../services/global';
+import { Component, OnInit } from '@angular/core';
+import { Project } from '../../models/project';
+import { ProjectService } from '../../services/project.service';
+import { UploadService } from '../../services/upload.service';
+import { Global } from '../../services/global';
 
 @Component({
   selector: 'app-create',
@@ -13,6 +13,7 @@ import {Global} from '../../services/global';
 export class CreateComponent implements OnInit {
   public title: string;
   public project: Project;
+  public saveProject: any;
   public status: string | undefined;
   public filesToUpload: Array<File> | undefined;
 
@@ -24,8 +25,7 @@ export class CreateComponent implements OnInit {
     this.project = new Project('', '', '', '', 2020, '', '');
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   onSubmit(form: any) {
     // Guardar los datos básicos
@@ -33,8 +33,6 @@ export class CreateComponent implements OnInit {
     this._projectService.saveProject(this.project).subscribe(
       (response) => {
         if (response.project) {
-
-
           // Subir la imagen
           this._uploadService
             .makeFileRequest(
@@ -44,11 +42,11 @@ export class CreateComponent implements OnInit {
               'image'
             )
             .then((result: any) => {
+              this.saveProject = result.project;
               this.status = 'success';
               console.log(result);
               form.reset();
             });
-
         } else {
           this.status = 'failed';
         }

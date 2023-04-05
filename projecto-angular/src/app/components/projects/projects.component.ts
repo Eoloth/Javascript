@@ -22,6 +22,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   getProjects() {
+    // @ts-ignore
     this._projectService.getProjects().subscribe(
       (response: { projects: any }) => {
         if (response.projects) {

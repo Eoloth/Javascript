@@ -9,6 +9,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DetailComponent } from './components/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     CreateComponent,
     ContactComponent,
     ErrorComponent,
+    DetailComponent,
   ],
   imports: [BrowserModule, HttpClientModule, FormsModule, routing],
   providers: [appRoutingProviders],

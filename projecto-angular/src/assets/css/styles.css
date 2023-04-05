@@ -266,3 +266,8 @@ input[disabled] {
 .project img {
   width: 50%;
 }
+
+.project a {
+  text-decoration: none;
+  color: black;
+}
